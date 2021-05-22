@@ -6,8 +6,12 @@
   box-sizing: border-box;
 }
 body{
-    margin: auto;
-    background-color: cadetblue;
+    margin: 0 auto;
+    /* background-color: wheat; */
+    width: 600px;
+}
+main{
+  background-color: white;
 }
 h2{
     background-color: darkgreen;
@@ -83,7 +87,7 @@ nav{
   background-color: black;
   position: fixed;
   bottom: 0;
-  width: 100%;
+  width: 600px;
   z-index: 9;
 }
 nav button{
@@ -112,12 +116,13 @@ section{
   height: 100%;
 }
 .popup {
-  display: none;
   position: absolute;
+  display: none;
+  top: 0;
   right: 0;
   left: 0;
   width: 500px;
-  z-index: 1;
+  z-index: 99;
   margin-bottom: 20px;
 }
 #my-form{
@@ -192,9 +197,7 @@ section{
 .btn:hover{
     background-color: blue;
 }
-.box{
-    
-}
+
 h3{
     text-align: center;
     padding: 2px;
@@ -203,21 +206,17 @@ h3{
     font-family: Acme;
 }
 .fold{
-    width: 40%;
-    float: left;
-    margin-left: 5%;
+    width: 200px;
+    margin-left: 50px;
     background-color: brown;
-    position: absolute;
-    top: 50%;
+    margin-top: 200px;
     font-family: Caladea;
-       box-shadow: 0px 0px 10px #333;
-    border-radius: 20px 0px 20px 0px;
+    box-shadow: 0px 0px 10px #333;
+    border-radius: 20px;
     border: none;
     font-size: 30px;
-        color: aliceblue;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
-    height: 50%;
+    color: aliceblue;
+    height: 100px;
 }
 .fold:hover{
     background-color: red;
@@ -225,30 +224,24 @@ h3{
     transition: 1s;
 }
 .fold2{
-    width: 40%;
-    height: 50%;
-    float: left;
+    width:200px;
+    height: 100px;
     margin-left: 5%;
-    position: absolute;
-    top: 50%;
+    margin-left: 90px;
     color: aliceblue;
     font-family: Caladea;
     font-size: 30px;
     background-color: brown;
     left: 50%;
     box-shadow: 0px 0px 10px #333;
-    border-radius: 20px 0px 20px 0px;
+    border-radius: 20px;
     border: none;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
 }
 .fold2:hover{
     background-color: red;
     color: aliceblue;
     transition: 1s;
 }
-
-
 
 .etext{
     background-color: aliceblue;
@@ -270,17 +263,18 @@ h3{
   color: white;
 }
 .about{
-    width: 100%;
-    position: absolute;
-    top: 50%;
+    width: 500px;
+    position: relative;
+    margin: 0 auto;
+    margin-top: 200px;
+    /* margin-left:200px; */
     color: aliceblue;
+    padding: 20px;
     font-family: Caladea;
     background-color: sandybrown;
     box-shadow: 0px 0px 10px #333;
     border: none;
     text-align: center;
-    -ms-transform: translateY(-50%);
-    transform: translateY(-50%);
 }
 .about h5{
     margin: 0px;
